@@ -1,0 +1,8 @@
+include ':app'
+rootProject.name='fbdemo'
+//增加内容
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'fb_module/.android/include_flutter.groovy'
+))
